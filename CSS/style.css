@@ -4,14 +4,15 @@
 *{
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 25;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
 body{
+    margin: 10px;
     padding: 5%;
-    background-color: rgb(201, 189, 180);
+    background-color: #e1dfdf ;
     display: flow-root;
     height: 100vh;
     width: 100%;
@@ -20,15 +21,17 @@ body{
     padding: 0 20px;
 }
 .t1{
-    background-color: rgb(177, 152, 152);
+    padding: 10;
+    background-color: #edededf2;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px 10px 70px 70px;
     font-style: italic   ;
     font-size: 50px;
-    text-shadow:  0 0 20px red;
+    margin: 10px;
     letter-spacing: 12px;
     text-transform: uppercase;
     font-weight: bold;
+    color: #000000;
 }
 .cv1{display: flex;
 }
@@ -54,27 +57,29 @@ cursor: pointer;
 .active[data-content] {
     display: block;
     text-align: center;
-    text-decoration-color: rgba(123, 79, 140, 0.815);
+    text-decoration-color: rgba(177, 15, 241, 0.815);
     
 }
 
 
 .content1{
+    margin: 10px;
+   
     display: inline-flex;
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    background-color: #d8cfcf;
-    padding: 0 20px;
+    background-color: #bdbdbd;
+    padding: 0 10px 0px 40px;
     border-radius: 40px;
-    box-shadow: 0 10px 40px rgba(159, 162, 177, .8)
+    box-shadow: 0 5px 40px rgba(152, 151, 151, 0.8)
 }
 
 .p2{
-    color: #83818c;
+    color: #000000;
     padding: 20px;
     text-decoration: none;
-    transition: .2s;
+    transition: .3s;
     margin: 0 6px;
     z-index: 1;
     font-family: 'DM Sans', sans-serif;
@@ -89,7 +94,7 @@ cursor: pointer;
         left: 0;
         width: 100%;
         height: 5px;
-        background-color: #e90000;
+        background-color: #000000;
         border-radius: 8px 8px 0 0;
         opacity: 0;
         transition: .3seg;
@@ -99,13 +104,13 @@ cursor: pointer;
 
 .p2:not(.is-active):hover:before{
     opacity: 1;
-    bottom: 0;
+    bottom: 5;
 }
 
 .p2:not(.is-active):hover {
-    color: #333; }
+    color: #000000; }
 
-.p2:hover:hover{
+.p2:hover{
     transform: scale(1.1);
 }
 
@@ -118,7 +123,32 @@ cursor: pointer;
     height: 5px;
     z-index: 1;
     border-radius: 8px 8px 0 0;
+    background-color: aqua;
+
+
 }
+.if{
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 20px;
+    
+}
+
+
+.ifimg{
+    display: inline-flex;
+    overflow: hidden;
+    margin: 20px;
+    transition: .3s;
+    display: inline-flex;
+    position: relative;
+    border-radius: 20px;
+}
+.ifimg:hover{
+    transform: scale(1.2);
+}
+    
+
 @media(max-width: 580px) {
     .content1{overflow: auto;}
 }
